@@ -10,7 +10,7 @@ yarn add similarities
 
 ## Find similarities in arrays
 
-The findSimilarities function takes in two arrays, arrayA and arrayB, and returns an array of objects containing all possible combinations of elements from arrayA and the percentage of similarities between each combination and arrayB.
+The `findSimilarities` function takes in two arrays, arrayA and arrayB, and returns an array of objects containing all possible combinations of elements from arrayA and the percentage of similarities between each combination and arrayB.
 
 ```typescript
 import { findSimilarities } from 'similarities';
