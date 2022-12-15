@@ -1,1 +1,2 @@
-export * from "./hello"
+export { pearsonCorrelationNumber, pearsonCorrelationString } from './pearson';
+export { findSimilarities } from './similarities';
