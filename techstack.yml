@@ -2,7 +2,7 @@ repo_name: maxgfr/similarities
 report_id: 3e720f2a4981a05cc1b62af1af865a94
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:55:59+00:00'
+timestamp: '2024-02-29T18:33:53+00:00'
 requested_by: renovate[bot]
 provider: github
 branch: main
@@ -93,7 +93,7 @@ tools:
   last_updated_by: Maxime Golfier
   last_updated_on: 2022-12-14 17:28:01.000000000 Z
 - name: Prettier
-  description: 'Prettier is an opinionated code formatter. '
+  description: Prettier is an opinionated code formatter.
   website_url: https://prettier.io/
   version: 3.0.0
   license: MIT
