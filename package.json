@@ -48,7 +48,7 @@
     "@swc/core": "1.13.20",
     "@swc/jest": "0.2.39",
     "@types/jest": "29.5.14",
-    "@types/node": "18.19.128",
+    "@types/node": "18.19.129",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "eslint": "8.57.1",
@@ -59,6 +59,6 @@
     "prettier": "3.6.2",
     "rimraf": "5.0.10",
     "semantic-release": "21.1.2",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   }
 }
