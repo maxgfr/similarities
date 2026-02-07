@@ -2,7 +2,13 @@ export function pearsonCorrelationNumber(
   data1: number[],
   data2: number[],
 ): number {
-  // Check if the datasets have the same length
+  // Validate inputs
+  if (!data1 || !data2) {
+    throw new Error('Datasets cannot be null or undefined');
+  }
+  if (data1.length === 0 || data2.length === 0) {
+    throw new Error('Datasets cannot be empty');
+  }
   if (data1.length !== data2.length) {
     throw new Error('The datasets must have the same length');
   }
@@ -35,6 +41,12 @@ export function pearsonCorrelationNumber(
     (data1.length * sumSquaresData1 - sumData1 * sumData1) *
       (data1.length * sumSquaresData2 - sumData2 * sumData2),
   );
+
+  // Handle division by zero (when all values are identical)
+  if (denominator === 0) {
+    return 0;
+  }
+
   return numerator / denominator;
 }
 
@@ -42,7 +54,13 @@ export function pearsonCorrelationString(
   arr1: string[],
   arr2: string[],
 ): number {
-  // Check if the arrays have the same length
+  // Validate inputs
+  if (!arr1 || !arr2) {
+    throw new Error('Arrays cannot be null or undefined');
+  }
+  if (arr1.length === 0 || arr2.length === 0) {
+    throw new Error('Arrays cannot be empty');
+  }
   if (arr1.length !== arr2.length) {
     throw new Error('The arrays must have the same length');
   }
@@ -79,6 +97,11 @@ export function pearsonCorrelationString(
   const den = Math.sqrt(
     (sum1Sq - sum1 ** 2 / arr1.length) * (sum2Sq - sum2 ** 2 / arr1.length),
   );
+
+  // Handle division by zero (when all values are identical)
+  if (den === 0) {
+    return 0;
+  }
 
   // Return the Pearson correlation
   return num / den;

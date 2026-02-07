@@ -1,6 +1,6 @@
-export function combinations(arr: any[]): any[][] {
+export function combinations<T>(arr: T[]): T[][] {
   // Initialize the result array
-  const result: any[][] = [];
+  const result: T[][] = [];
 
   // Loop through the input array
   for (let i = 0; i < arr.length; i++) {

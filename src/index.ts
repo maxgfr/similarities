@@ -1,2 +1,6 @@
 export { pearsonCorrelationNumber, pearsonCorrelationString } from './pearson';
-export { findSimilarities } from './similarities';
+export {
+  findSimilarities,
+  getPercentOfSimilarities,
+  SimilarityResult,
+} from './similarities';
