@@ -1,6 +1,6 @@
 {
   "name": "similarities",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "maxgfr",
   "license": "MIT",
   "description": "A typescript library to calculate similarities between two arrays",
